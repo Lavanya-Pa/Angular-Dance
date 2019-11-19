@@ -34,5 +34,14 @@ public class BookingController {
 	public void deleteByIsbn(@PathVariable int isbn) {
 		bookingservice.deleteBookings(isbn);
 	}
+	@GetMapping("/getAllBookings")
+	public List<Booking> getAllBookings() {
+	return bookingservice.getAllBookings();
+	}
+	@GetMapping(value = "/updateBookingStatus/{status}/{bookingId}")
+	public void updateBookingStatus(@PathVariable("status") String status, @PathVariable("bookingId") int bookingId) {
+		bookingservice.updateBookingStatus(status, bookingId);
+	}
+
 
 }

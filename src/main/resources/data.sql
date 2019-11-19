@@ -17,38 +17,7 @@ values
 );
 
 
-insert into user
-(
-	id,
-   first_name,
-   last_name,
-   user_name,
-   contact,
-   email,
-   password,
-   type
-)
-values
-(
-	'1',
-   'Lavanya',
-   'Reddy',
-   'lav',
-   '9000139311',
-   'lav@gmail.com',
-   'L@vanya1',
-   'user'
-   ),
-   (
-	'2',
-   'Rohini',
-   'Bandla',
-   'rohi',
-   '9398239039',
-   'rohini@gmail.com',
-   'Rohini@1',
-   'user'
-   );
+
 
    
 insert into choreographers

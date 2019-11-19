@@ -28,6 +28,8 @@ public class Booking {
 	private String session;
 	@Column(length = 10)
 	private int pricetable;
+	@Column(length = 50)
+	private String status;
 	
 	
 	
@@ -38,7 +40,7 @@ public class Booking {
 	
 
 	public Booking(int bookingId, String userName, String location, String choreographers, String danceforms,
-			String session, int pricetable) {
+			String session, int pricetable, String status) {
 		super();
 		this.bookingId = bookingId;
 		this.userName = userName;
@@ -47,6 +49,7 @@ public class Booking {
 		this.danceforms = danceforms;
 		this.session = session;
 		this.pricetable = pricetable;
+		this.status = status;
 	}
 
 	
@@ -55,6 +58,18 @@ public class Booking {
 		return "Booking [bookingId=" + bookingId + ", userName=" + userName + ", location=" + location
 				+ ", choreographers=" + choreographers + ", danceforms=" + danceforms + ", session=" + session
 				+ ", pricetable=" + pricetable + "]";
+	}
+
+
+	
+	public String getStatus() {
+		return status;
+	}
+
+
+
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 
